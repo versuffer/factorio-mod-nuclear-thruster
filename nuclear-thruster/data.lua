@@ -1,0 +1,6 @@
+require("__nuclear-thruster__.override.prototypes.entity")
+require("__nuclear-thruster__.prototypes.entity")
+require("__nuclear-thruster__.prototypes.fluid")
+require("__nuclear-thruster__.prototypes.item")
+require("__nuclear-thruster__.prototypes.recipe")
+require("__nuclear-thruster__.prototypes.technology")

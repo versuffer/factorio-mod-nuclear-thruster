@@ -1,0 +1,13 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 19. 07. 2026
+  Major Features:
+    - Initial release
+    - Nuclear thruster technology ADDED
+    - Nuclear thruster entity ADDED
+    - Nuclear thruster recipe ADDED
+    - Nuclear thruster item ADDED
+    - Uranium thruster fuel fluid ADDED
+    - Uranium thruster fuel recipe ADDED
+    - Uranium thruster fuel from waste technology ADDED
+    - Uranium thruster fuel from waste recipe ADDED
