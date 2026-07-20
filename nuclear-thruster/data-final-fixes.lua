@@ -41,3 +41,9 @@ if settings.startup["enable-uranium-thruster-fuel-fuel-value-adjustment"].value 
     local adjusted_fuel_value = settings.startup["uranium-thruster-fuel-fuel-value-kj"].value .. "kJ"
     data.raw["fluid"]["uranium-thruster-fuel"].fuel_value = adjusted_fuel_value
 end
+
+-- Nuclear thruster alternative flame graphics
+
+if settings.startup["enable-nuclear-thruster-alternative-flame-graphics"].value == true then
+    data.raw["thruster"]["nuclear-thruster"].graphics_set.flame_effect.filename = "__nuclear-thruster__/graphics/entity/nuclear-thruster/thruster-flame-alternative.png"
+end

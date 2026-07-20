@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 20. 07. 2026
+  Graphics:
+    - Alternative flame graphics ADDED
+  Settings:
+    - Alternative flame graphics toggle setting ADDED
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 19. 07. 2026
   Locale:
