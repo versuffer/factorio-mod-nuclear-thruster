@@ -15,6 +15,10 @@ local nuclear_thruster_technology = {
         type = "unlock-recipe",
         recipe = "uranium-thruster-fuel"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "metallic-asteroid-uranium-extraction"
+      },
     },
     prerequisites = {
         "space-platform-thruster",

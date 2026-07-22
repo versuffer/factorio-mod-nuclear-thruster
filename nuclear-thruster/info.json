@@ -1,6 +1,6 @@
 {
     "name": "nuclear-thruster",
-    "version": "1.1.0",
+    "version": "1.2.1",
     "title": "Nuclear Thruster",
     "author": "versuffer",
     "factorio_version": "2.0",
@@ -9,5 +9,5 @@
         "space-age >= 2.0"
 ],
     "space_travel_required": true,
-    "description": "Adds balanced late-game thruster that uses Uranium thruster fuel and water to operate. It has modified efficiency curve and significantly more thrust. Nuclear Thruster can be unlocked before Aquilo. You can also make Nuclear thruster symmetric and increase Uranium thruster fuel fuel_value to get more thrust."
+    "description": "Adds balanced late-game thruster that uses Uranium thruster fuel and water to operate. It has modified efficiency curve and significantly more thrust. Nuclear Thruster can be unlocked before Aquilo. You can also make Nuclear thruster symmetric and increase Uranium thruster fuel fuel_value to get more thrust. This mod also adds an alternative way to get uranium in space - metallic asteroid uranium extraction."
   }
