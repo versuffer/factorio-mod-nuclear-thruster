@@ -42,6 +42,23 @@ if settings.startup["enable-uranium-thruster-fuel-fuel-value-adjustment"].value 
     data.raw["fluid"]["uranium-thruster-fuel"].fuel_value = adjusted_fuel_value
 end
 
+-- Metallic asteroid uranium extraction uranium ore probability adjustment
+
+if settings.startup["enable-metallic-asteroid-uranium-extraction-uranium-ore-probability-adjustment"].value == true then
+    local adjusted_uranium_ore_probability = settings.startup["metallic-asteroid-uranium-extraction-uranium-ore-probability-percent"].value / 100
+    local metallic_asteroid_uranium_extraction_recipe = data.raw.recipe["metallic-asteroid-uranium-extraction"]
+    for _, result in pairs(metallic_asteroid_uranium_extraction_recipe.results) do
+        if result.name == "uranium-ore" then
+            result.probability = adjusted_uranium_ore_probability
+        end
+    end
+    data.extend(
+        {
+            metallic_asteroid_uranium_extraction_recipe
+        }
+    )
+end
+
 -- Nuclear thruster alternative flame graphics
 
 if settings.startup["enable-nuclear-thruster-alternative-flame-graphics"].value == true then

@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 26. 07. 2026
+  Bugfixes:
+    - Metallic asteroid uranium extraction recipe subgroup CHANGED to "space-crushing"
+  Settings:
+    - Metallic asteroid uranium extraction recipe uranium ore probability adjusting ADDED
+---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 23. 07. 2026
   Minor changes:
