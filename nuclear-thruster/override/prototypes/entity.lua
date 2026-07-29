@@ -1,8 +1,33 @@
-local pipe_picture = assembler3pipepictures()
-pipe_picture.north = util.empty_sprite()
-pipe_picture.south.filename = "__nuclear-thruster__/graphics/entity/centrifuge/centrifuge-pipe-S.png"
-pipe_picture.east.filename = "__nuclear-thruster__/graphics/entity/centrifuge/centrifuge-pipe-E.png"
-pipe_picture.west.filename = "__nuclear-thruster__/graphics/entity/centrifuge/centrifuge-pipe-W.png"
+local pipe_picture = {
+    north = util.empty_sprite(),
+    east =
+    {
+      filename = "__nuclear-thruster__/graphics/entity/centrifuge/centrifuge-pipe-E.png",
+      priority = "extra-high",
+      width = 42,
+      height = 76,
+      shift = util.by_pixel(-24.5, 1),
+      scale = 0.5
+    },
+    south =
+    {
+      filename = "__nuclear-thruster__/graphics/entity/centrifuge/centrifuge-pipe-S.png",
+      priority = "extra-high",
+      width = 88,
+      height = 61,
+      shift = util.by_pixel(0, -31.25),
+      scale = 0.5
+    },
+    west =
+    {
+      filename = "__nuclear-thruster__/graphics/entity/centrifuge/centrifuge-pipe-W.png",
+      priority = "extra-high",
+      width = 39,
+      height = 73,
+      shift = util.by_pixel(25.75, 1.25),
+      scale = 0.5
+    }
+}
 
 local centrifuge = table.deepcopy(data.raw["assembling-machine"]["centrifuge"])
 centrifuge.fluid_boxes = {

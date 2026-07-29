@@ -4,7 +4,7 @@
 local nuclear_thruster_recycling_recipe = {
   type = "recipe",
   name = "nuclear-thruster-recycling",
-  category = "recycling",
+  categories = {"recycling"},
   order = "a",
   hidden = true,
   energy_required = 0.5,

@@ -49,7 +49,7 @@ if settings.startup["enable-metallic-asteroid-uranium-extraction-uranium-ore-pro
     local metallic_asteroid_uranium_extraction_recipe = data.raw.recipe["metallic-asteroid-uranium-extraction"]
     for _, result in pairs(metallic_asteroid_uranium_extraction_recipe.results) do
         if result.name == "uranium-ore" then
-            result.probability = adjusted_uranium_ore_probability
+            result.independent_probability = adjusted_uranium_ore_probability
         end
     end
     data.extend(

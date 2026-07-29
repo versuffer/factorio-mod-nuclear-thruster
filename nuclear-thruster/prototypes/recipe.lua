@@ -3,7 +3,7 @@
 local nuclear_thruster_recipe = {
   type = "recipe",
   name = "nuclear-thruster",
-  category = "metallurgy",
+  categories = {"metallurgy"},
   enabled = false,
   energy_required = 30,
   ingredients = {
@@ -26,7 +26,7 @@ local uranium_thruster_fuel_recipe = {
     name = "uranium-thruster-fuel",
     energy_required = 90,
     enabled = false,
-    category = "centrifuging",
+    categories = {"centrifuging"},
     subgroup = "uranium-processing",
     order = "b[uranium-products]-d[uranium-thruster-fuel]",
     ingredients =
@@ -44,7 +44,7 @@ local metallic_asteriod_uranium_extraction = {
     name = "metallic-asteroid-uranium-extraction",
     icon = "__nuclear-thruster__/graphics/icons/metallic-asteroid-uranium-extraction.png",
     icon_size = 64,
-    category = "crushing",
+    categories = {"crushing"},
     subgroup = "space-crushing",
     order = "b[advanced-metallic-asteroid-crushing]-c[metallic-asteroid-uranium-extraction]",
     enabled = false,
@@ -57,13 +57,13 @@ local metallic_asteriod_uranium_extraction = {
         type = "item",
         name = "uranium-ore",
         amount = 10,
-        probability = 0.20
+        independent_probability = 0.20
       },
       {
         type = "item",
         name = "metallic-asteroid-chunk",
         amount = 1,
-        probability = 0.03
+        independent_probability = 0.03
       },
     },
     allow_productivity = true,
@@ -75,7 +75,7 @@ local uranium_thruster_fuel_from_waste = {
     name = "uranium-thruster-fuel-from-waste",
     energy_required = 15,
     enabled = false,
-    category = "centrifuging",
+    categories = {"centrifuging"},
     ingredients = {
         {
             type = "item",
